@@ -46,7 +46,7 @@ var validatePayment = cron.schedule('*/8 * * * *', async function() {
    }finally{
 
    }
-// console.log('You will see this message every 15 minutes');
+
 
 })
 //validatePayment.start();
