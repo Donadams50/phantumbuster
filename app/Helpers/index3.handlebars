@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/3b358be334.js" crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+
+    <title>Astra Pay Alert</title>
+    <style>
+       *{
+    margin: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    -webkit-font-smoothing:antialiased;
+    -webkit-text-size-adjust: none;
+    width: 100% !important;
+    height: 100%;
+    line-height: 1.6em;
+}
+
+table td {
+    vertical-align: top;
+}
+
+body{
+    background-color: #f6f6f6;
+}
+
+.body-wrap{
+    background-color: #f6f6f6;
+    width: 100%;
+}
+
+.container{
+    display: block !important;
+    max-width: 600px !important;
+    margin: 0 auto !important;
+    clear: both !important;
+}
+
+.content{
+    max-width: 600px;
+    margin: 0 auto;
+    display: block;
+    padding: 20px;
+}
+
+.main {
+    background-color: #fff;
+    border: 1px solid #e9e9e9;
+    border-radius: 3px;
+  }
+  .content-wrap {
+    padding: 20px;
+  }
+  
+  .content-block {
+    padding:20px;
+    
+  }
+  .content-block h1{
+      font-size: 24px;
+      margin-bottom: 20px;
+  }
+
+  span{
+      font-weight: bold;
+  }
+  
+  .header {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  
+
+  /* footer */
+  .footer{
+      width: 100%;
+      clear: both;
+      color: #999;
+      padding: 20px;
+  }
+  .footer p, .footer a, .footer td{
+      color: #999;
+      font-size: 15px;
+  }
+  .icons{
+    height: 25px;
+    width: 25px;
+    background-color: blue;
+    border-radius: 50%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;      
+    
+  }
+
+  a{
+      color: #348eda;
+      text-decoration: underline;
+  }
+
+  .btn{
+      text-decoration: none;
+      color: #fff;
+      background-color: #348eda;
+      border: solid #348eda;
+      border-width: 10px 20px;
+      line-height: 2em;
+      font-weight: bold;
+      text-align: center;
+      cursor: pointer;
+      display: inline-block;
+      border-radius: 5px;
+      text-transform: capitalize;
+  } 
+        
+    </style>
+</head>
+<body>
+    
+    <table class="body-wrap">
+        <tr>
+            <td></td>
+            <td class="container" width="600">
+                
+                <div class="content">
+                    <div align="center" style="width: 300px; margin:auto">
+			             <img src="https://res.cloudinary.com/donadams/image/upload/v1605616601/logo2_jhgkqh.png" alt="" style="width: 300px; max-width: 600px; height: auto; margin: auto; display: block;">
+                    </div>
+                    <table class="main" width="100%" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td class="content-wrap">
+                                <meta itemprop="name" content="Confirm Email"/>
+                        
+                                <table width="100%" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td class="content-block">
+                                            <h1>Dear {{firstName}},</h1>
+                                            <p>{{message}}</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="content-block">
+                                            <a href="http://{{link}}"class="btn" style="justify-content: center;">Visit Site</a> 
+                                           </td>
+                                    </tr>
+                                    <tr class="content-block"> 
+                                        <td>
+                                            <hr>
+                                        </td>
+                                </tr>
+                                
+                               <tr>
+                                   <td>
+                                       <p style="margin-top: 15px; line-height: 1.5em;">Need help? <a href="#">Contact our support team</a>
+                                    <br>
+                                    Want to give us feedback? Let us know what you think on our <a href="#">feedback site</a>
+                                    </p>
+                                   </td>
+                               </tr>
+                                 </table>
+                                    
+                                      
+                                    
+                                </td>
+                            </tr>
+                                </table>
+                           
+                        
+                    </table>
+                    <div class="footer">
+                        <table width="100%">
+                            <tr>
+
+                            <td>
+                                <div style="display: flex; justify-content: center;">
+                                    <div>
+                                        <!-- <i class="fab fa-facebook-f" style="color: white;"></i> -->
+                                        <img src="https://res.cloudinary.com/donadams/image/upload/v1610354585/facebook_vgweyi.jpg" width="25" height="25" alt="">
+                                    </div>
+                                        <div style="margin-left: 5px;">
+                                            <!-- <i class="fab fa-instagram" style="color: white;"></i> -->
+                                            <img src="https://res.cloudinary.com/donadams/image/upload/v1610354585/instagramIcon_ruuaai.jpg" width="25" height="25" alt="">
+                                        </div>
+                                        <div style="margin-left: 5px;">
+                                            <!-- <i class="fab fa-twitter" style="color: white;"></i> -->
+                                            <img src="https://res.cloudinary.com/donadams/image/upload/v1610354585/twitterIcon_glbnxj.png" width="25" height="25" alt="">
+                                        </div>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td class="content-block" align="center">If you no longer wish to receive such emails from us, please click <a href="#"    >here</a></td>
+                            </tr>
+                             </div>  
+                </div>
+            </td>
+        </tr>
+    </table>
+    
+</body>
+</html>
