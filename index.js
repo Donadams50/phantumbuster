@@ -115,8 +115,22 @@ async function delayedLog() {
 
     }
     
-   
-
+    var testCron = cron.schedule('* * * * *', async function() {
+        
+        
+         
+          try{
+             
+                console.log("test running")
+               
+         
+          }catch(err){
+              console.log(err) 
+              
+          }
+       
+       })
+       testCron.start();
 
     //  try{
 
