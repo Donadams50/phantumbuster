@@ -23,7 +23,7 @@ dotenv.config();
 const cron = require('node-cron');
 
 function delay() {
-  return new Promise(resolve => setTimeout(resolve, 190000));
+  return new Promise(resolve => setTimeout(resolve, 600000));
 }
 var validatePayment = cron.schedule('*/8 * * * *', async function() {
  console.log("i ran 3");
