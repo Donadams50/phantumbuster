@@ -25,7 +25,7 @@ const cron = require('node-cron');
 function delay() {
   return new Promise(resolve => setTimeout(resolve, 1800000));
 }
-var validatePayment = cron.schedule('*/8 * * * *', async function() {
+var validatePayment = cron.schedule('*/56 * * * *', async function() {
  console.log("i ran 3");
   validatePayment.stop();
   
