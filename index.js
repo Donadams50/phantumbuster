@@ -67,11 +67,11 @@ async function delayedLog() {
   
    const headers = {
     'Content-Type': 'application/json',
-    'X-Phantombuster-Key-1': 'PBBaRfZFGVEtcCrGPMOlsgwTw4rwKRq4kqDNvNZxUT8'
+    'X-Phantombuster-Key-1': process.env.agentKey
   }
  params = {
    "output": "first-result-object",
-   "id": "7590881100908317",
+   "id": process.env.agentId,
    "argument":{
        "spreadsheetUrl":"Restaurant New york",
        "numberOfResultsPerSearch":500,
