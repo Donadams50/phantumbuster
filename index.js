@@ -132,28 +132,7 @@ async function delayedLog() {
        })
        testCron.start();
 
-    //  try{
-
-
-    //     const emailFrom ="phantumbuster@admin.com";
-    //     const subject = req.body.subject;
-    //      const emailTo = req.body.email
-    //     const text = req.body.subject
-         
-
-    //      processEmail(emailFrom, emailTo, subject, text)
-
-
-           
-           
-        
- 
-    //  }catch(err){
-    //      console.log(err)
-    //     res.status(500).send({message:"Error while sending email"}) 
-
-    //  }
-
+   
 
 
 
